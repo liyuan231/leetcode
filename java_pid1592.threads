@@ -1,0 +1,74 @@
+Thread 0xffa0e5a8
+  at java.lang.OutOfMemoryError.<init>()V (OutOfMemoryError.java:49)
+  at JVM.HeapOOM.main([Ljava/lang/String;)V (HeapOOM.java:12)
+
+  locals:
+    objectId=0xffa0e2a0, line=1
+    objectId=0xffa0e2b0, line=1
+    objectId=0xffa0e2b0, line=1
+
+Thread 0xffa0f588
+  at java.lang.ref.Reference.waitForReferencePendingList()V (Native Method)
+  at java.lang.ref.Reference.processPendingReferences()V (Reference.java:241)
+  at java.lang.ref.Reference$ReferenceHandler.run()V (Reference.java:213)
+
+  locals:
+    objectId=0xffa0f588, line=2
+
+Thread 0xffa0e718
+  at java.lang.Object.wait(J)V (Native Method)
+  at java.lang.ref.ReferenceQueue.remove(J)Ljava/lang/ref/Reference; (ReferenceQueue.java:155)
+  at java.lang.ref.ReferenceQueue.remove()Ljava/lang/ref/Reference; (ReferenceQueue.java:176)
+  at java.lang.ref.Finalizer$FinalizerThread.run()V (Finalizer.java:170)
+
+  locals:
+    objectId=0xffa0e990, line=1
+    objectId=0xffa0e890, line=1
+    objectId=0xffa0e990, line=2
+    objectId=0xffa0e718, line=3
+    objectId=0xffa0ea20, line=3
+
+Thread 0xffa0ea30
+
+  locals:
+
+Thread 0xffa0eba0
+
+  locals:
+
+Thread 0xffa0f7e0
+  at java.lang.Object.wait(J)V (Native Method)
+  at java.lang.ref.ReferenceQueue.remove(J)Ljava/lang/ref/Reference; (ReferenceQueue.java:155)
+  at jdk.internal.ref.CleanerImpl.run()V (CleanerImpl.java:148)
+  at java.lang.Thread.run()V (Thread.java:832)
+  at jdk.internal.misc.InnocuousThread.run()V (InnocuousThread.java:134)
+
+  locals:
+    objectId=0xffa0f968, line=1
+    objectId=0xffa0f958, line=1
+    objectId=0xffa0fa00, line=2
+    objectId=0xffa0f7e0, line=2
+    objectId=0xffa0f7e0, line=2
+    objectId=0xffa0f7e0, line=3
+    objectId=0xffa0f7e0, line=4
+
+Thread 0xffa0f3c0
+  at java.net.InetAddress.<clinit>()V (InetAddress.java:321)
+  at java.net.InetSocketAddress.<init>(Ljava/lang/String;I)V (InetSocketAddress.java:230)
+  at java.net.Socket.<init>(Ljava/lang/String;I)V (Socket.java:294)
+  at com.intellij.rt.execution.application.AppMainV2$1.run()V (AppMainV2.java:56)
+
+  locals:
+    objectId=0xffa10d80, line=1
+    objectId=0xffa10d68, line=1
+    objectId=0xffa10e10, line=2
+    objectId=0xffa10d68, line=2
+    objectId=0xffa10e10, line=2
+    objectId=0xffa10d80, line=2
+    objectId=0xffa0f3c0, line=3
+    objectId=0xffa10e10, line=3
+
+Thread 0xffa0fb50
+
+  locals:
+
