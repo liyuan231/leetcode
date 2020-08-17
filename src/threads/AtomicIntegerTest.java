@@ -16,11 +16,11 @@ public class AtomicIntegerTest {
     public static void main(String[] args) {
         AtomicIntegerTest atomicIntegerTest = new AtomicIntegerTest();
         List<Thread> threads = new ArrayList<>();
-        for(int i=0;i<10;i++){
+        for (int i = 0; i < 10; i++) {
             threads.add(new Thread(atomicIntegerTest::m));
         }
         threads.forEach(Thread::start);
-        threads.forEach(o->{
+        threads.forEach(o -> {
             try {
                 o.join();
             } catch (InterruptedException e) {
