@@ -2,7 +2,7 @@ package algorithm;
 
 import java.util.Iterator;
 
-public class Queue<Item> implements Iterable<Item>{
+public class Queue<Item> implements Iterable<Item> {
     private Node first;
     private Node last;
     private int N;
@@ -11,18 +11,33 @@ public class Queue<Item> implements Iterable<Item>{
     public Iterator<Item> iterator() {
         return new ListIterator<>();
     }
-    private class ListIterator<Item> implements Iterator<Item>{
+
+    public Item poll() {
+        if (N == 0) {
+            return null;
+        }
+        return dequeue();
+    }
+
+    public void add(Item node) {
+        enqueue(node);
+    }
+
+    private class ListIterator<Item> implements Iterator<Item> {
 
         private Node current;
 
         public ListIterator() {
             this.current = first;
         }
+
         @Override
         public boolean hasNext() {
-            return current!=null;
+            return current != null;
         }
-        public void remove(){}
+
+        public void remove() {
+        }
 
         @Override
         public Item next() {

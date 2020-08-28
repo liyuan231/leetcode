@@ -37,7 +37,7 @@ public class TreeNode {
     public static void inorderTraversal(TreeNode root) {
         if(root==null){return;}
         inorderTraversal(root.left);
-        System.out.print(root.val);
+        System.out.print(root.val+" ");
         inorderTraversal(root.right);
     }
 }
