@@ -1,5 +1,5 @@
 package designPattern.bridge;
 
 public interface DrawApi {
-    public void drawCircle();
+    public void drawCircle(int radius,int x,int y);
 }
