@@ -266,6 +266,45 @@ public class JVMInstructionTest {
         float f = 0.1F;
         double d = f;
     }
+
+    /**
+     * 获取某一对象的成员变量
+     */
+    @Test public void getfield(){
+        Student student = new Student();
+        boolean gender = student.gender;
+    }
+    /**
+     * 获取某一类的静态变量
+     */
+    @Test public void getstatic(){
+        Student student = new Student();
+        long serialVersionUID = Student.serialVersionUID;
+        String mark = Student.mark;
+        Student.test();
+    }
+
+    /**
+     * 决定指定对象是否为指定类型
+     */
+    @Test public void instanceof_(){
+        Student student = new Student();
+        boolean b = student instanceof Object;
+    }
+    /**
+     * 调用动态方法
+     */
+    @Test public void invokedynamic(){
+        Student student = new Student();
+        student.play();
+    }
+    /**
+     * int左移
+     */
+    @Test public void ishl(){
+        int n = (int) (Math.random()*10);
+        int i = 10<<n;
+    }
 }
 
 

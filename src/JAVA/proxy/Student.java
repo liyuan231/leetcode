@@ -1,9 +1,18 @@
 package JAVA.proxy;
 
-public class Student implements SomethingThatAStudentShouldDo,SomethingThatAPersonShouldDo {
+import java.io.Serializable;
+
+public class Student implements Serializable, SomethingThatAStudentShouldDo, SomethingThatAPersonShouldDo {
+
+    public static final long serialVersionUID = 2298709324095361005L;
+    public static String mark = "student" ;
     private String name;
     private String school;
     private Integer age;
+    public boolean gender;
+    public static void test(){
+
+    }
 
     public Student() {
     }
@@ -59,6 +68,6 @@ public class Student implements SomethingThatAStudentShouldDo,SomethingThatAPers
 
     @Override
     public void write() {
-        System.out.println(this+" is writing!");
+        System.out.println(this + " is writing!");
     }
 }
