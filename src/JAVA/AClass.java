@@ -1,6 +1,6 @@
 package JAVA;
 
-public class AClass {
+public class AClass implements AInterafce {
     private static String name;
     private String gender;
 
@@ -26,5 +26,23 @@ public class AClass {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public void play() {
+        System.out.println("AClass is playing!");
+    }
+
+//    @Override
+//    public void test() {
+//        System.out.println("AClass is testing!");
+//    }
+
+    public static void main(String[] args) {
+        int i=10;
+        System.out.println(i);
+        AClass aClass = new AClass();
+        aClass.play();
+        aClass.test();
     }
 }
