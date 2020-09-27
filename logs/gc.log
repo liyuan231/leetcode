@@ -1,0 +1,6 @@
+[0.027s][info][gc] Using G1
+[0.056s][info][gc] Periodic GC disabled
+[1.604s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 4M->2M(10M) 14.958ms
+[2.709s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 3M->3M(10M) 8.847ms
+[3.827s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 4M->4M(10M) 1.137ms
+[4.928s][info][gc] GC(3) Pause Young (Normal) (G1 Evacuation Pause) 5M->5M(10M) 1.637ms

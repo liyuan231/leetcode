@@ -6,6 +6,7 @@ import java.util.Arrays;
  * 自底向上的归并排序
  */
 public class MergeUB {
+    private static int count=0;
     private static Comparable[] copy;
 
     public static void sort(Comparable[] a) {
@@ -31,6 +32,7 @@ public class MergeUB {
                 a[k] = copy[i++];
             } else if (copy[j].compareTo(copy[i]) < 0) {
                 a[k] = copy[j++];
+                count+=mid-i+1;
             } else {
                 a[k] = copy[i++];
             }
@@ -38,11 +40,12 @@ public class MergeUB {
     }
 
     public static void main(String[] args) {
-        Integer[] integers = new Integer[15];
-        for (int i = 0; i < integers.length; i++) {
-            integers[i] = (int) (Math.random() * integers.length);
-        }
+        Integer[] integers = new Integer[]{7,5,6,4};
+//        for (int i = 0; i < integers.length; i++) {
+//            integers[i] = (int) (Math.random() * integers.length);
+//        }
         MergeUB.sort(integers);
         System.out.println(Arrays.toString(Arrays.stream(integers).toArray()));
+        System.out.println(count);
     }
 }

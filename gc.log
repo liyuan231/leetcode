@@ -1,0 +1,10 @@
+[0.020s][info][gc] Using G1
+[0.049s][info][gc] Periodic GC disabled
+[0.158s][info][gc] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 4M->3M(10M) 3.534ms
+[0.160s][info][gc] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 4M->4M(10M) 1.843ms
+[0.162s][info][gc] GC(2) Pause Young (Normal) (G1 Evacuation Pause) 5M->5M(10M) 0.992ms
+[0.163s][info][gc] GC(3) Pause Young (Concurrent Start) (G1 Evacuation Pause) 6M->6M(10M) 1.103ms
+[0.163s][info][gc] GC(4) Concurrent Cycle
+[0.167s][info][gc] GC(4) Pause Remark 6M->6M(10M) 0.374ms
+[0.168s][info][gc] GC(4) Pause Cleanup 6M->6M(10M) 0.044ms
+[0.168s][info][gc] GC(4) Concurrent Cycle 5.341ms
