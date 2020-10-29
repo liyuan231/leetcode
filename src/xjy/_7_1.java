@@ -1,5 +1,8 @@
 package xjy;
 
+import org.junit.Test;
+
+import java.io.File;
 import java.util.Scanner;
 
 public class _7_1 {
@@ -32,5 +35,12 @@ public class _7_1 {
             ans = Math.max(ans, num);
         }
         return ans;
+    }
+
+    @Test
+    public void test(){
+        String path="http:\\124.156.153.105\\files\\tmp.docx";
+        File file = new File(path);
+        System.out.println(file.exists());
     }
 }
