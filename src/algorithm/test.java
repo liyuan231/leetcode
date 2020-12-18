@@ -1,11 +1,13 @@
 package algorithm;
 
+import org.junit.Test;
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
 public class test {
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        int[] nums = new int[]{0,0,0};
+        int[] nums = new int[]{0, 0, 0};
 //        twoSum(nums,9);
         List<List<Integer>> lists = threeSum(nums);
         for (List<Integer> list : lists) {
@@ -42,4 +44,23 @@ public class test {
         }
         return result;
     }
+
+    @Test
+    public void test1() {
+        Integer[] a = new Integer[]{1, 2, 2, 3, 3, 4, 4, 5};
+        int count = 1;
+        for (int i = 1; i < a.length; i++) {
+            if (a[i].compareTo(a[i - 1]) != 0) {
+                count++;
+            }
+        }
+        System.out.println(count);
+
+
+    }
+
+    /*
+        1 0 3 6 4 2 5
+        0 3 1 6 2 5 4
+     */
 }

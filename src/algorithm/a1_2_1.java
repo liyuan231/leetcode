@@ -4,8 +4,9 @@ import edu.princeton.cs.algs4.Point2D;
 import edu.princeton.cs.algs4.StdRandom;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
-public class a1_2_1 {
+public class a1_2_1 implements Comparator,Comparable {
     public static void main(String[] args) {
         int n = 3;
         ArrayList<Point2D> point2DS = new ArrayList<>();
@@ -24,4 +25,71 @@ public class a1_2_1 {
         }
         System.out.println(min);
     }
+
+    @Override
+    public int compare(Object o1, Object o2) {
+        return 0;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
