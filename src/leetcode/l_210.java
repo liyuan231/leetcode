@@ -14,6 +14,8 @@ public class l_210 {
     private static boolean valid = true;
 
     public static void main(String[] args) {
+//        LinkedList
+//        ArrayList
         int n = 7;
 //        n=4;
         n=2;
