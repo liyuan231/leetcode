@@ -5,7 +5,6 @@ import (
 	"io/ioutil"
 )
 
-var col_char = []byte{'a', '0', '=', '+', '*', ',', ';', '(', ')', '#', '\\', ' '}
 var table1 = [][]byte{
 	{'b', 'e', 'g', 'i', 'n'},
 	{'e', 'n', 'd'},
@@ -25,21 +24,22 @@ var code1 = []byte{'{', '}', 'a', 'c', '=', '+', '$', '*', ',', ';', '(', ')', '
 
 //状态转换矩阵
 var M = [][]int{
-	{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0},
-	{11, 11},
-	{0, 12},
-	{0},
-	{0, 0, 0, 13},
-	{0},
-	{0},
-	{0},
-	{0},
-	{0},
-	{0},
-	{11, 11},
-	{0, 12},
-	{0},
+	{1, 2, 3, 4, 5, 6, 7, 8, 9, 10},
+	{11, 11, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 12, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 13, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+	{11, 11, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 12, 0, 0, 0, 0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 }
+var col_char = []byte{'a', '0', '=', '+', '*', ',', ';', '(', ')', '#', '\\', ' '}
 
 type codeVal struct {
 	code byte
@@ -63,7 +63,7 @@ l0:
 			return code1[index]
 		}
 	}
-	return 'i'
+	return 255
 }
 func col(c byte, str []byte) int {
 	if c >= 'a' && c <= 'z' {
@@ -80,22 +80,26 @@ func col(c byte, str []byte) int {
 	panic("Invalid character: " + string(c))
 }
 func scan(buf []byte, i *int) codeVal {
+	//从i位置开始读取，依照状态转换图，状态转换矩阵进行映射查询
 	cv := codeVal{}
 	token := make([]byte, 0)
 	s := 0
-	j := col(buf[*i], col_char) //字符转换成序列号
-	for M[s][j] != 0 {
-		token = append(token, buf[*i])
-		if buf[*i] == '#' {
+	//j := col(buf[*i], col_char) //字符转换成序列号
+	j := -1
+	for true {
+		j = col(buf[*i], col_char)
+		s = M[s][j]
+		if s == 0 {
 			break
 		}
-		s = M[s][j]
+		token = append(token, buf[*i])
 		*i++
-		j = col(buf[*i], col_char)
+		if *i == len(buf) || buf[*i] == '#' || buf[*i] == ' ' {
+			break
+		}
 	}
-
 	cv.code = searchTable(token)
-	if cv.code == 0 {
+	if cv.code == 255 {
 		if token[0] >= 'a' && token[0] <= 'z' {
 			cv.code = 'i'
 		} else {

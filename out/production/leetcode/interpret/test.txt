@@ -1,4 +1,4 @@
 begin
   real r,h,s;
-  s=2 * 3.14 * r *(r+h)
+  s=2 * 3 * r *(r+h)
 end

@@ -1,5 +1,7 @@
 package interpret;
 
+import java.io.IOException;
+
 public class Hw_01 {
     private static final int len = 20;
     private static final String[] table = new String[]{"begin", "end", "integer", "real"};
@@ -15,6 +17,7 @@ public class Hw_01 {
         }
 
         public CodeVal() {
+
         }
     }
 
@@ -121,8 +124,20 @@ public class Hw_01 {
 
     }
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws IOException, InterruptedException {
+        String[] strs = new String[]{"A", "B", "C", "D"};
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < strs.length; j++) {
+                int finalI = j;
+                Thread thread = new Thread(() -> {
+                    System.out.print(strs[finalI] + finalI + " ");
+                });
+                thread.start();
+                thread.join();
+            }
+            Thread.sleep(100);
+            System.out.println();
+        }
 
     }
 }
