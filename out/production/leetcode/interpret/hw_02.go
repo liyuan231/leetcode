@@ -186,7 +186,6 @@ func doScan2(buf []byte) {
 }
 
 func main() {
-
 	bytes := preConstruct2("F:\\IdeaProjects\\leetcode\\src\\interpret\\test.txt")
 	fmt.Println()
 	fmt.Println(string(bytes))

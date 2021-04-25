@@ -125,19 +125,18 @@ public class Hw_01 {
     }
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        String[] strs = new String[]{"A", "B", "C", "D"};
-        for (int i = 0; i < 6; i++) {
-            for (int j = 0; j < strs.length; j++) {
-                int finalI = j;
-                Thread thread = new Thread(() -> {
-                    System.out.print(strs[finalI] + finalI + " ");
-                });
-                thread.start();
-                thread.join();
-            }
-            Thread.sleep(100);
-            System.out.println();
-        }
-
+//        String[] strs = new String[]{"A", "B", "C", "D"};
+//        for (int i = 0; i < 6; i++) {
+//            for (int j = 0; j < strs.length; j++) {
+//                int finalI = j;
+//                Thread thread = new Thread(() -> {
+//                    System.out.print(strs[finalI] + finalI + " ");
+//                });
+//                thread.start();
+//                thread.join();
+//            }
+//            Thread.sleep(100);
+//            System.out.println();
+//        }
     }
 }

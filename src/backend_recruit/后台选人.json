@@ -1,0 +1,216 @@
+[
+  {
+    "id": 0,
+    "name": "颜显翔",
+    "date": "201-04-15",
+    "gpa": 3.36,
+    "advanced_mathematics": 79,
+    "liner_algebra": 89,
+    "c_programming": 89,
+    "associations": [
+      {
+        "name": "知识工程实验室",
+        "score": 85
+      }
+    ],
+    "opinion_of_university": "学习主要",
+    "frequency_of_library_or_self_study_room": "1/14",
+    "algorithms": [
+      {
+        "name": "链表创建和删除",
+        "score": 80
+      },
+      {
+        "name": "二分搜索",
+        "score": 50
+      }
+    ],
+    "data_structure": 50
+  },
+  {
+    "id": 1,
+    "name": "符健概",
+    "date": "201-04-14",
+    "gpa": 2.99,
+    "advanced_mathematics": 73,
+    "liner_algebra": 90,
+    "c_programming": 82,
+    "associations": [
+    ],
+    "opinion_of_university": "学技术，学社交，过的一般般，有压力",
+    "frequency_of_library_or_self_study_room": "4/7",
+    "algorithms": [
+      {
+        "name": "打印沙漏",
+        "score": 100
+      },
+      {
+        "name": "逆波兰",
+        "score": 40
+      }
+    ],
+    "data_structure": 90
+  },
+  {
+    "id": 2,
+    "name": "张晨",
+    "date": "201-04-09",
+    "gpa": 2.97,
+    "advanced_mathematics": 73,
+    "liner_algebra": 86,
+    "c_programming": 84,
+    "associations": [
+    ],
+    "opinion_of_university": "多自学东西，应用到工作",
+    "frequency_of_library_or_self_study_room": "2/7",
+    "algorithms": [
+      {
+        "name": "统计单链表中大于指定元素的个数",
+        "score": 80
+      },
+      {
+        "name": "括号匹配",
+        "score": 75
+      }
+    ],
+    "data_structure": 90
+  },
+  {
+    "id": 3,
+    "name": "何红梅",
+    "date": "201-04-05",
+    "gpa": 3.46,
+    "advanced_mathematics": 87,
+    "liner_algebra": 82,
+    "c_programming": 87,
+    "associations": [
+      {
+        "name": "辩论队",
+        "score": 85
+      }
+    ],
+    "opinion_of_university": "认真学习，考研，计算机",
+    "frequency_of_library_or_self_study_room": "7/7",
+    "algorithms": [
+      {
+        "name": "统计字符输入输出",
+        "score": 100
+      },
+      {
+        "name": "手写栈",
+        "score": 80
+      }
+    ],
+    "data_structure": 85
+  },
+  {
+    "id": 4,
+    "name": "方浩男",
+    "date": "201-04-13",
+    "gpa": 4,
+    "advanced_mathematics": 96,
+    "liner_algebra": 91,
+    "c_programming": 98,
+    "associations": [
+      {
+        "name": "Quanta",
+        "score": 80
+      },
+      {
+        "name": "网络安全",
+        "score": 80
+      }
+    ],
+    "opinion_of_university": "学一门技能；人际交往能力",
+    "frequency_of_library_or_self_study_room": "7/7",
+    "algorithms": [
+      {
+        "name": "逆波兰",
+        "score": 100
+      },
+      {
+        "name": "矩阵乘法及其梯度",
+        "score": 95,
+        "tip": "这题有难度，虽然没有写出来，但以此也可以看出编程人员代码功底可以"
+      }
+    ],
+    "data_structure": 100
+  },
+  {
+    "id": 5,
+    "name": "林坦熙",
+    "date": "201-04-13",
+    "gpa": 2.75,
+    "advanced_mathematics": 77,
+    "liner_algebra": 75,
+    "c_programming": 80,
+    "associations": [
+      {
+        "name": "篮球队",
+        "score": 90
+      }
+    ],
+    "opinion_of_university": "学习一门技术；社会工作；扩大交际圈；",
+    "frequency_of_library_or_self_study_room": "2/7",
+    "algorithms": [
+      {
+        "name": "链表去重",
+        "score": 50
+      },
+      {
+        "name": "括号匹配",
+        "score": 40
+      }
+    ],
+    "data_structure": 80
+  },
+  {
+    "id": 6,
+    "name": "李燕婷",
+    "date": "201-04-06",
+    "gpa": 3.42,
+    "advanced_mathematics": 74,
+    "liner_algebra": 96,
+    "c_programming": 88,
+    "associations": [
+      {
+        "name": "自强社",
+        "score": 95
+      }
+    ],
+    "opinion_of_university": "培养学习能力",
+    "frequency_of_library_or_self_study_room": "7/7",
+    "algorithms": [
+      {
+        "name": "简化的插入排序",
+        "score": 70
+      }
+    ],
+    "data_structure": 80
+  },
+  {
+    "id": 7,
+    "name": "杨育谦",
+    "date": "201-04-07",
+    "gpa": 3.0,
+    "tip": "绩点忘记记下来了",
+    "advanced_mathematics": 83,
+    "liner_algebra": 76,
+    "c_programming": 87,
+    "associations": [
+    ],
+    "opinion_of_university": "锻炼自学能力，自律能力，社交能力",
+    "frequency_of_library_or_self_study_room": "2/7",
+    "algorithms": [
+      {
+        "name": "冒泡排序",
+        "score": 100
+      },
+      {
+        "name": "括号匹配",
+        "score": 50
+      }
+    ],
+    "data_structure": 80
+  }
+]
