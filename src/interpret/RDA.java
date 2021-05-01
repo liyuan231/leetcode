@@ -14,15 +14,6 @@ import java.util.*;
  * 约定空串需要排到
  */
 public class RDA {
-    private static class ListNode<T> {
-        ListNode<T> next;
-        T t;
-
-        public ListNode(T t) {
-            this.t = t;
-        }
-    }
-
     public static void main(String[] args) {
         String input = "(i+i)*(i+i)#";
         String[] strings = new String[]{
